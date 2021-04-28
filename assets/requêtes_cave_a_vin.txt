@@ -1,0 +1,47 @@
+----------------------------------------------------------------------------------------------------
+-> Afficher la liste des clients qui ont commandé une bouteille spécifique: 
+----------------------------------------------------------------------------------------------------
+
+SELECT cl.PRENOM, cl.NOM, commande.ID, commande.IDClient, commande.IDProduit, b.ID, b.REGION, b.DATE
+FROM commande 
+JOIN client cl ON cl.ID = commande.IDClient 
+JOIN bouteille b ON commande.IDProduit = b.ID
+WHERE b.TYPE="BLANC"
+
+----------------------------------------------------------------------------------------------------
+-> Afficher la/les commande(s) selon le nom ou prénom de la personne: 
+----------------------------------------------------------------------------------------------------
+
+SELECT client.NOM, client.PRENOM, bouteille.REGION, bouteille.TYPE, commande.QUANTITE
+FROM commande 
+JOIN client ON client.ID = commande.IDClient 
+JOIN bouteille ON commande.IDProduit = bouteille.ID
+WHERE client.NOM="JEAN"
+
+----------------------------------------------------------------------------------------------------
+-> Afficher le montant par personne: 
+----------------------------------------------------------------------------------------------------
+
+SELECT client.NOM, client.PRENOM, ROUND(SUM(bouteille.PRIX*commande.QUANTITE),2) as PrixTotal
+FROM commande
+JOIN client ON client.ID = commande.IDClient 
+JOIN bouteille ON commande.IDProduit = bouteille.ID
+GROUP BY client.ID
+
+----------------------------------------------------------------------------------------------------
+-> Stock qui resterait après la vente: 
+----------------------------------------------------------------------------------------------------
+
+SELECT bouteille.REGION, bouteille.STOCK - SUM(commande.QUANTITE) as quantiteRestante
+FROM commande
+JOIN bouteille ON commande.IDProduit = bouteille.ID
+GROUP BY bouteille.REGION
+
+----------------------------------------------------------------------------------------------------
+-> Afficher le nombre de quantité achetée par produit
+----------------------------------------------------------------------------------------------------
+
+SELECT bouteille.REGION, SUM(commande.QUANTITE) as quantiteAchete
+FROM commande
+JOIN bouteille ON commande.IDProduit = bouteille.ID
+GROUP BY bouteille.REGION
