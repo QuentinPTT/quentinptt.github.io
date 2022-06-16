@@ -41,7 +41,6 @@
 					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
 						<a class="nav-item nav-link active" href="#">ACCUEIL <span class="sr-only">(current)</span></a>
-						<a class="nav-item nav-link" href="#/">ARTICLES</a>
 						<a class="nav-item nav-link" href="tipe/">TIPE</a>
 						<a class="nav-item nav-link" href="#">CONSTRUCTION</a>
 					</div>
@@ -61,11 +60,12 @@
 						<button type="button" class="btn blue" data-toggle="modal" data-target="#bioModal"><img src="img/protect.svg" height="50px" alt="">BIOGRAPHIE</button>
 					</div>
 					<div class="col-lg-4" >
-						<button type="button" class="btn blue" data-toggle="modal" data-target="#creationModal"><img src="img/creations.svg" height="50px" alt="">PROJETS</button>
+						<button type="button" class="btn red" data-toggle="modal" data-target="#progModal"><img src="img/css.svg" height="50px" alt=""> PROGRAMMATION</button>
 					</div>
 					<div class="col-lg-4" >
-						<button type="button" class="btn blue" data-toggle="modal" data-target="#contactModal"><img src="img/mail.svg" height="50px" alt="">CONTACT</button>
+						<button type="button" class="btn red" data-toggle="modal" data-target="#secuModal"><img src="img/url.svg" height="50px" alt="">SECURITE</button>
 					</div>
+
 				</div>
 				<div class="row">
 					<div class="col-lg-4" >
@@ -83,10 +83,7 @@
 						<button type="button" class="btn red" data-toggle="modal" data-target="#sciencesModal"><img src="img/flask.svg" height="50px" alt="">SCIENCES</button>
 					</div>
 					<div class="col-lg-4" >
-						<button type="button" class="btn red" data-toggle="modal" data-target="#progModal"><img src="img/css.svg" height="50px" alt=""> PROGRAMMATION</button>
-					</div>
-					<div class="col-lg-4" >
-						<button type="button" class="btn red" data-toggle="modal" data-target="#secuModal"><img src="img/url.svg" height="50px" alt="">SECURITE</button>
+						<button type="button" class="btn blue" data-toggle="modal" data-target="#contactModal"><img src="img/mail.svg" height="50px" alt="">CONTACT</button>
 					</div>
 				</div>
 			</div>
@@ -106,81 +103,24 @@
 					</div>
 					<div class="modal-body">
 						<p><a href="assets/cv.pdf" class="modal-title-blue" >📝 Curriculum vitæ</a></p>
-						<p>Né le 7 Décembre 2002 à Dreux en France, aujourd'hui agé de 18 ans.</p>
+						<p>Né le 7 Décembre 2002 à Dreux en France, aujourd'hui agé de 19 ans.</p>
 						<h4 class="modal-title-blue">🏫 Formation: </h4>
-						<p>- <span>Brevet des collèges</span>, Mention Très bien, au Collège de l'Immaculée Damville</p>
-						<p>- <span>Baccalauréat Général Scientifique</span>, Mention Très Bien, au Lycée Porte de Normandie</p>
-						<p>- Actuellement en <span> Première Année de CPGE - MPSI </span> au Lycée Pierre Corneille</p>
+						<p><span>Brevet des collèges</span>, Mention Très bien, au Collège de l'Immaculée Damville</p>
+						<p><span>Baccalauréat Général Scientifique</span>, Mention Très Bien, au Lycée Porte de Normandie</p>
+						<p><span>MPSI/MP*</span> au Lycée Pierre Corneille de Rouen</p>
 						<h4 class="modal-title-blue">🧰 Intérêts et compétences: </h4>
-						<p><span>Photographie:</span> classique, aérienne, retouches, balance des couleurs, mise au point..</p>
-						<p><span>Vidéo:</span> montage, clip, effets spéciaux.. </p>
-						<p><span>Graphisme:</span> WebDesign, logo, bannière, animation.. </p>
-						<p><span>Science:</span> Mathématiques (Bayes, Ensembles..) Physique (Cosmologie, Mécanique..)  </p>
-						<p><span>Programmation:</span> Web (HTML, CSS, PHP, Javascript..), Embarqué (Python, Arduino..) </p>
-						<p><span>Sécurité informatique:</span> Cryptographie, analyse de réseau, sécurité applicatif.. </p>
-					 	<p><span>Musique:</span> guitare en autodidacte, solfège, enregistrement, mixage.. </p>
+						<p><span>Photographie:</span> Classique, Aérienne, Retouches photos, Balance des couleurs, Mise au point..</p>
+						<p><span>Vidéo:</span> Montage, Clip, Effets spéciaux.. </p>
+						<p><span>Graphisme:</span> Webdesign, Logo, Bannière..</p>
+						<p><span>Science:</span> Mathématiques, Physique, Informatique..</p>
+						<p><span>Programmation:</span> Web (HTML, CSS, Javascript..), Embarqué (Python, Arduino..), Base de données (SQL)</p>
+						<p><span>Sécurité informatique:</span> Cryptographie, analyse de réseau.. </p>
+					 	<p><span>Musique:</span> Guitare en autodidacte, enregistrement, mixage.. </p>
 					 	<p></p>
 					</div>
 			  	</div>
 			</div>
 		</div>
-
-		<!-- Mes créations -->
-		<div class="modal fade" id="creationModal" tabindex="-1" role="dialog" aria-labelledby="creationModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			  	<div class="modal-content modal-content-blue">
-					<div class="modal-header modal-blue">
-						<div class="modal-center">
-							<h5 class="modal-title" id="creationModalCenterTitle">PROJETS</h5>
-						</div>
-				  		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<strong aria-hidden="true">&times;</strong>
-				  		</button>
-					</div>
-					<div class="modal-body">
-						<div role="tabpanel">
-							<!-- Tab panes -->
-							<div class="tab-content">
-								<div role="tabpanel" class="tab-pane active" id="uploadTab">
-									<p style="margin:0">Voici une liste non-exhaustive de mes créations.</p>
-									<h4 class="modal-title-blue">🎹 Musique: </h4>
-									<p>- <span>Enregistrement d’un medley de fingerstyle:</span> Prise de son musical</p>
-									<h4 class="modal-title-blue">🎥 Animation/Montage: </h4>
-									<p>- <span><a href="https://www.youtube.com/playlist?list=PLShT1zYtO7WckJt8JoOb8gN46VWaby1A7" target="_blank">Introduction sur ma chaîne Youtube:</a></span> Cinéma 4D & After Effects</p>
-									<p>- <span><a href="assets/lordesperanza.mp4" target="_blank">Lord Esperanza Review:</a></span> Premiere Pro & After effects</p>
-									<p>- <span><a href="assets/mdl.mp4" target="_blank">MDL Soirée Klub:</a></span> Premiere Pro & After effects</p>
-									<h4 class="modal-title-blue">🖥️ Programmation: </h4>
-									<p>- <span>HTML & CSS:</span> Site actuel, Site ICN, <a href="https://github.com/QuentinPTT/SpaceX-Website" target="_blank">SpaceX</a></p>
-									<p>- <span><a href="https://github.com/QuentinPTT/MontyHall" target="_blank">Simulation de probabilités MontyHall:</a></span> Python</p>
-									<p>- <span><a href="https://github.com/QuentinPTT/Arroseur-Automatique" target="_blank">Arrosoir Automatique:</a></span> MitAppInventor & Arduino</p>
-									<p>- <span><a href="https://docs.google.com/document/d/1hozrME_mSY1YUxT3hDzWVHiKbZX82r0CbGA_hLP16gw/edit?usp=sharing" target="_blank">Moteur PWM</a> & <a href="https://docs.google.com/document/d/1jPNY7tQLSFbS2AhIkv7LmQ_nz3zqaJ_Z0Eul_8RO6QU/edit?usp=sharing" target="_blank">Pas à pas</a>:</span> Oscilloscope, python</p>
-									<p>- <span> <a href="https://quentinptt.fr/projetsi">Just Think It:</a></span> Intelligence artificielle avec python + Arduino déplacement du bras</p>
-									<p>- <span>Programme calculatrice:</span> <a href="https://github.com/QuentinPTT/SECONDX-TI82ADV" target="_blank">SECONDX</a>, <a href="https://github.com/QuentinPTT/BINOMIAL-TI82ADV" target="_blank">BINOMIAL</a></p>
-									<p>- <span><a href="https://github.com/QuentinPTT/ShutdownRIP" target="_blank">Programmateur Shutdown:</a></span> Batch & Powershell</p>
-								</div>
-								<div role="tabpanel" class="tab-pane" id="browseTab">
-									<h4 class="modal-title-blue">📷 Photographie: </h4>
-									<p>- <span><a href="https://www.flickr.com/photos/170898054@N04/" target="_blank">Album Photo/Vidéo</a>:</span> Drône, Hybride</p>
-									<p>- <span>Photo retouchée:</span> Photoshop et Lightroom</p>
-									<h4 class="modal-title-blue">🔬 Sciences: </h4>
-									<p>- <span>Ecriture du livre sur les théories scientifiques:</span> Mathématiques, informatiques, physique…</p>
-									<h4 class="modal-title-blue">🔒 Sécurité informatique: </h4>
-									<p>- <span><a href="https://fr.calameo.com/read/006226133653668d16b63" target="_blank">TPE:</a></span> Réseau internet, Cryptographie</p>
-									<p>- <span><a href="https://drive.google.com/drive/folders/1lC3FxZ2aoKU3Oet8lsrmh7vg-VV7ski3" target="_blank">Optimisation:</a></span> Service, MSConfig, Architecture PC (Carte mère, CPU, GPU..)</p>
-								</div>
-							</div>
-							<!-- Nav tabs -->
-							<ul class="nav" role="tablist">
-								<li role="presentation" class="li-modal-1 active"><a href="#uploadTab" aria-controls="uploadTab" role="tab" data-toggle="tab">&lt;&lt;</a></li>
-								<li role="presentation"  class="li-modal-2"><a href="#browseTab" aria-controls="browseTab" role="tab" data-toggle="tab">&gt;&gt;</a></li>
-							</ul>
-						</div>
-					</div>
-			  	</div>
-			</div>
-		</div>
-
-
 
 		<!-- Me contacter -->
 		<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle" aria-hidden="true">
@@ -197,7 +137,7 @@
 					<div class="modal-body">
 						<p>Les différents moyens de me contacter:</p>
 						<h4 class="modal-title-blue">Mail: </h4>
-						<p>📧 contact@quentinptt.fr</p>
+						<p>📧 quentin.abo@hotmail.com</p>
 						<h4 class="modal-title-blue"> Réseaux sociaux: </h4>
 						<p>🦾 <a href="https://github.com/QuentinPTT" target="_blank"><span>Github</span></a>
 						<p>🔴 <a href="https://www.youtube.com/channel/UCWc1jwuFPd8m8NuWdiU3w7w?view_as=subscriber" target="_blank"><span>Youtube</span></a>
@@ -222,14 +162,13 @@
 						<p>Domaines variès (Composition, Enregistrement), classique, pop, rap.</p>
 						<h4 class="modal-title-pink">🎸 Pratique instrumentale: </h4>
 						<p><span>Guitare Classique</span> depuis plus de 2 ans, plus spécifiquement dans le fingerstyle (Someone You Loved, Faded, Believer, 7 Years, Let Her Go, River Flows in You, My Heart Will Go On, The Pink Panther..)</p>
-						<p>Quelques compétences en <span>claviers</span> (Piano, Synthétiseurs..)</p>
 						<h4 class="modal-title-pink">🎙️ Enregistrements: </h4>
 						<p>Maitrise de <span>Cubase</span> et de son environnement</p>
 						<p>Connaissances en <span>prise de son</span> (voix, instruments, MIDI..)</p>
 						<p>Connaissances en <span>mixage</span> (Filtres, equalizer, dynamiques..)</p>
-					 	<h4 class="modal-title-pink">👨‍🎤 Artistes préférés: </h4>
-					 	<p><span>Rap:</span> Lord Esperanza, Lonepsi, Tsew The Kid, Dinos..</p>
-					 	<p><span>Pop/Rock:</span> Twenty One Pilots, Polyphia, Imagine Dragons.. </p>
+						<br>
+						<h4 class="modal-title-pink">🛠️ Exemples de projet : </h4>
+						<p> - <span><a href="">Enregistrement</a> </span>d'un medley </p>
 					</div>
 			  	</div>
 			</div>
@@ -258,6 +197,9 @@
 						<p><span>Adobe Lightroom:</span> Gestion des couleurs photographiques - exposition, contraste, tons, clarté, vibrance, saturation, température, luminance..</p>
 						<p><span>Connaissances de base:</span> Balances des blancs, ISO, vitesse d'obturation, ouverture, focus, profondeur de champ, focale à adapter selon le style de photo..</p>
 						<p><span>Pilotage de drône</span> Entrainement dans la réalité ainsi que virtuellement avec le programme DJI Flight Simulator</p>
+						<br>
+						<h4 class="modal-title-pink">🛠️ Exemples de projet : </h4>
+						<p> - <span><a href="" target="_blank">Album</a></span> de photographies diverses</p>
 					</div>
 			  	</div>
 			</div>
@@ -286,6 +228,11 @@
 						<p><span>Adobe Première Pro:</span> Montage de plusieurs séquences</p>
 						<p><span>Davinci Resolve:</span> Etalonnage vidéo</p>
 						<p><span>Cinema 4D:</span> Modélisation en 3D</p> 
+						<br>
+						<h4 class="modal-title-pink">🛠️ Exemples de projet : </h4>
+						<p>- <span><a href="https://www.youtube.com/playlist?list=PLShT1zYtO7WckJt8JoOb8gN46VWaby1A7" target="_blank">Introduction sur ma chaîne Youtube</a></span> : Cinéma 4D & After Effects</p>
+						<p>- <span><a href="assets/lordesperanza.mp4" target="_blank">Lord Esperanza Review</a></span> : Premiere Pro & After effects</p>
+						<p>- <span><a href="assets/mdl.mp4" target="_blank">MDL Soirée Klub</a></span> : Premiere Pro & After effects</p>
 					</div>
 			  	</div>
 			</div>
@@ -305,18 +252,11 @@
 				  		</button>
 					</div>
 					<div class="modal-body">
-						<p>Passionné dès l'enfance par la science, j'envisage de devenir chercheur en informatique</p>
-						<h4 class="modal-title-red">➕ Domaines qui m'intéressent: </h4>
-						<p><span>Mathématiques:</span> Probabilités (Bayès, Statistiques..), Algèbre (Théorie des ensembles)</p>
-						<p><span>Physique Théorique:</span> Quantique (Schrödinger, Young..) Relativité (Relativité générale & restreinte, Michelson-Morley..)</p>
-						<p><span>Mécanique:</span> Newtionienne (Cinématique, dynamique, statique, du point..) Fluides (Poussée d'Archimède, Fluide incompressible..)</p>
-						<p><span>Neurosciences et Sociologie:</span> cognitif, biomimétisme, </p>
-						<p><span>Linguistique:</span> Zététique, rhétorique, sémantique..</p>
-						<p><span></span></p>
-						<h4 class="modal-title-red">💡 Compétences: </h4>
-						<p>Large culture scientifique en autodidacte: lectures, articles, conférences..</p>
-						<p>Connaissances plus approfondies en Mathématiques et Informatique via différents projets</p>
-						<p>Bonnes connaissances en Physique à travers des vidéos en ligne</p>	 
+						<p>Passionné dès l'enfance par la science, j'envisage de d'approfondir l'informatique</p>
+						<h4 class="modal-title-red">💡 Domaines de connaissances: </h4>
+						<p><span>Mathématiques</span> : Algèbre générale, Arithmétique, Polynômes, Algèbre linéaire, Fonction de la variable réelle, Calcul différentiel, Calcul intégral, Séries, Topologie et Probabilités</p>	 
+						<p><span>Physique</span> : Signaux physiques, Mécanique, Thermodynamique, Induction et forces de Laplace, Traitement du signal, Optique, Electromagnétisme, Physique quantique, Thermodynamique statistique</p>	 
+						<p><span>Informatique</span> : Programmation, Graphes, Arbres..</p>	 
 					</div>
 			  	</div>
 			</div>
@@ -336,16 +276,23 @@
 					</div>
 					<div class="modal-body">
 						<h4 class="modal-title-red">🕸️ Développement Web</h4>
-						<p><span>Front-end:</span> HTML, CSS (Compass), Javascript (jQuery), Boostrap..</p>
-						<p><span>Back-end:</span> PHP (optimisé en POO), Ruby, SQL (Mise en place de Bases de Données)..</p>
+						<p><span>Front-end</span> : HTML, CSS (Compass), Javascript (jQuery), Boostrap..</p>
+						<p><span>Back-end</span> : SQL (Mise en place de Bases de Données)</p>
 						<h4 class="modal-title-red">🍥 WebDesign</h4>
 						<p><span>Gabarit:</span> Images et maquettes sous Adobe Photoshop et Adobe Illustrator</p>
-						<p>Des designs originaux, modernes et intéractifs allant du plus au complexe, à des designs plus épurés comme celui-ci avec des sites "responsives" adaptés à différents écrans</p>
+						<p>Des designs originaux, modernes et intéractifs allant du plus au complexe, à des designs plus épurés comme celui-ci avec des sites "responsives" adaptés à différents écrans.</p>
 						<h4 class="modal-title-red">💡 Logiciels</h4>
-						<p><span>C++:</span> Simulations de probabilités, utilitaires windows..</p>
+						<p><span>Python:</span> Simulations de probabilités, utilitaires windows..</p>
 						<h4 class="modal-title-red">📳 Embarqué</h4>
-						<p><span>Arduino:</span> Divers applications - ServoMoteurs, Hygrométrie, Ultrasons.. à l'aide d'une Uno et ESP32</p>
+						<p><span>Arduino:</span> Diverses applications - ServoMoteurs, Hygrométrie, Ultrasons.. à l'aide d'une Uno et ESP32</p>
 						<p><span>Python:</span> Un projet majeur, récupérant et traitant des ondes EEG, dirigé avec une Pycom</p>
+						<br>
+						<h4 class="modal-title-red">🛠️ Exemples de projet : </h4>
+						<p> - <span>Site internet</span> <a href="https://quentinptt.github.io">Mon site</a>, <a href="https://github.com/QuentinPTT/SpaceX-Website" target="_blank">SpaceX</a>..</p></p> 
+						<p> - <span><a href="https://github.com/QuentinPTT/MontyHall">MontyHall</a></span> : GUI en python pour comprendre un paradoxe
+						<p> - <span><a href="https://github.com/QuentinPTT/Just-Think-It">Just think it</a></span> : Aider un handicapé moteur à acquérir plus d'autonomie avec l'apprentissage autonome</p>
+						<p> - <span><a href="https://github.com/QuentinPTT/Scraping-Vinted">Scraping de site internet</a></span> : à l'aide de Selenium</p>
+
 					</div>
 			  	</div>
 			</div>
@@ -364,14 +311,15 @@
 				  		</button>
 					</div>
 					<div class="modal-body">
-						<h4 class="modal-title-red"> Fondamentaux</h4>
-						<p>Types de réseaux, composants, Adressage IP (IPV4,IPV6), Routage IP, Services IP </p>
-						<h4 class="modal-title-red"> Réseau</h4>
-						<p>Routeurs, Pare Feu</p>
-						<h4 class="modal-title-red"> Anonymisation</h4>
-						<p>Réseau privé virtuel, Tor, Proxies, SSH, I2P..</p>
-						<h4 class="modal-title-red"> Rétro-Ingénierie</h4>
-						<p>Cryptographie, Offuscation, Analyse Forensique</p>
+						<div>
+							<p>J'ai lu quelques livres à propos de la sécurité informatique notamment sur les thèmes de la cryptographie, les machines virtuelles, le reverse engineering..</p>
+							<br>
+							<h4 class="modal-title-red">🛠️ Exemples de projet : </h4>
+							<p>- <span><a href="https://fr.calameo.com/read/006226133653668d16b63" target="_blank">TPE</a></span> : Réseau internet, Cryptographie</p>
+							<p>- <span><a href="https://drive.google.com/drive/folders/1lC3FxZ2aoKU3Oet8lsrmh7vg-VV7ski3" target="_blank">Optimisation</a></span> : Service, MSConfig, Architecture PC (Carte mère, CPU, GPU..)</p>
+							<p> - <span><a href="https://github.com/QuentinPTT/ShutdownRIP">Programmer un arrêt minuté</a></span> : en Batch</p>
+							<p> - <span><a href="https://github.com/QuentinPTT/OptimiserRIP">Logiciel d'optimisation</a></span> : en Python</p>
+						</div>
 					</div>
 			  	</div>
 			</div>
